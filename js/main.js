@@ -40,23 +40,31 @@ $(function(){
 // Contact form
 
 $(document).ready(function(){
-            $('#btn_submit').click(function(){
+            $('#btn_submit').click(function(e){
                 // собираем данные с формы
-                var user_phone    = $('#user_phone').val();
-                var user_email   = $('#user_email').val();
+                e.preventDefault();
+                var user_phone = $('#user_phone').val();
+                var user_email = $('#user_email').val();
                 // отправляем данные
                 $.ajax({
                     url: "action.php", // куда отправляем
                     type: "post", // метод передачи
                     dataType: "json", // тип передачи данных
                     data: { // что отправляем
-                        "user_phone":    user_phone,
-                        "user_email":   user_email,
+                        "user_phone": user_phone,
+                        "user_email": user_email,
                     },
                     // после получения ответа сервера
-                    success: function(data){
-                        $('.messages').html(data.result); // выводим ответ сервера
-                    }
+                    success: function(response){
+                        $('#messages').empty();
+                        $('#messages').append(response); // выводим ответ сервера
+                        //if (response){ // если есть ответ, то выполняем след. действия
+                   //$('#messages').append('<div class="mes-success">Спасибо за ваше сообщение</div>');
+                //} else {
+                   //$('#messages').append('<div class="mes-error">Ошибка!</div>');
+                //}
+                    //alert("Ваше сообщение отправлено!");
+                }
                 });
             });
         });
