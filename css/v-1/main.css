@@ -969,3 +969,100 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
     background-color: #ff3366;
 }
+
+/* цены */
+.plans {
+    background:#f5f5f5;
+    padding:5em 0 2em 0;
+}
+.pricing {
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+.pricing-heading {
+    margin-bottom: 25px;
+}
+.pricing_top h6 {
+  margin: 0;
+  color: #c65757;
+  font-weight: bold;
+  text-transform: uppercase;
+    font-size: 16px;
+}
+.pricing_top { 
+  padding: 35px 0;
+  background-color: #ff3366;
+  border-radius: 5px; }
+.pricing_top h6 {
+    margin: 0 0 20px 0;
+    color: #2D2D2D;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.pricing_top p {
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+}
+.pricing_top sup {
+    font-weight: normal;
+    font-size: 20px;
+}
+.pricing_middle ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+}
+.pricing_middle ul li {
+    padding:25px;
+    border-top:1px solid #B2B2B2;
+  color: #111;
+  font-size: 14px;
+  line-height: 25px;
+  list-style-type: none;
+}
+.pricing_middle ul li:first-child {
+    border-top: none;
+}
+.pricing_middle ul li i {
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    -moz-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+}
+.pricing_middle ul li:hover i {
+    color: #c65757;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    -moz-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+}
+.pricing_middle ul li i {
+    color: #aaa;
+    padding-right:25px;
+}
+.one_third {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+   margin-bottom: 3em;
+}
+.pricing {
+  background: #fff;
+  text-align: center;
+  padding:0;
+}
+.last {
+  margin-right: 0 !important;
+}
+.pricing_middle ul li:nth-child(2n-1) {
+}
+.pricing_middle ul li:hover {
+ color: #000;
+  background-color: #F9F9F9;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
